@@ -4,7 +4,8 @@
   "description": "A small bot for DN. Posts the top ten stories every now and then.",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/forever/bin/forever index.js",
+    "start": "pm2 start index.js",
+    "logs": "pm2 logs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/athyuttamre/dnbot#readme",
   "dependencies": {
-    "forever": "^0.15.1"
+    "dotenv": "^2.0.0",
+    "pm2": "^1.0.2"
   }
 }
