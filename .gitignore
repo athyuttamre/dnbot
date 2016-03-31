@@ -35,3 +35,6 @@ jspm_packages
 
 # dotenv
 .env
+
+# sqlite3
+*.db
